@@ -25,7 +25,7 @@ body {
 .title {
     color: white;
     font-size: 18pt;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
 }
 
 .full-stack {
@@ -100,13 +100,13 @@ nav {
 .logo {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     margin: 0;
 }
 
 .logo #name {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .logo span {
@@ -233,6 +233,7 @@ nav {
     margin: 8px;
     color: #417266;
     font-size: 16px;
+    font-weight: 500;
 }
 
 #about-pic {
@@ -413,7 +414,7 @@ ul {
 #contact {
     margin: 3em 0;
     color: #f3f3f3;
-    height: auto
+    /* height: 600px; */
 }
 
 #contact-title {
@@ -441,7 +442,7 @@ ul {
     background: none;
     box-sizing: border-box;
     border: none;
-    border-bottom: 1px solid rgb(161, 161, 161);
+    border: 1px solid rgb(161, 161, 161);
     border-radius: 0;
     color: #f3f3f3;
 }
@@ -452,7 +453,7 @@ ul {
 }
 
 #text-area {
-    border-bottom: 1px solid rgb(161, 161, 161);
+    /* border: 1px solid rgb(161, 161, 161); */
     border-radius: 0;
     background: none;
     color: #f3f3f3;
@@ -486,7 +487,7 @@ ul {
 
 #footer {
     padding-top: 1em;
-    height: 15em;
+    height: auto;
     color: #ffffff;
     font-size: 12px;
     background: #000000;
@@ -516,7 +517,7 @@ ul {
 }
 
 .footer-icons {
-    margin: 2em 0;
+    margin: 3em 0;
 }
 
 .footer-icons ul li {
@@ -538,4 +539,6 @@ ul {
 
 .name-year {
     color: #417266;
+    margin: 0;
+    padding-bottom: 1em;
 }
