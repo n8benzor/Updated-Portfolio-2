@@ -20,13 +20,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
     <title>N A T H A N - B E N Z O R | P O R T F O L I O </title>
 </head>
 
 <body>
-
+    <!------------------NAV ----------------------->
     <nav id="nav">
         <div class="logo">
             <h4 id="name">NATHAN<span> BENZOR</span></h4>
@@ -52,26 +52,27 @@
         </div>
     </nav>
 
+    <!---------------- MAIN -------------------->
     <div class="wrapper">
-
         <div class="title">
             HELLO I'M NATHAN, I AM A <span class="full-stack"> FULL - STACK</span> WEB DEVELOPER
         </div>
         <a href="#about"> <button class="view-work-btn">VIEW MY WORK <i class="fas fa-angle-double-right"
                     id="arrow-icon"></i></button></a>
     </div>
-    <div class="container">
 
+    <!-----------------ABOUT ------------------------>
+    <div class="container">
         <section id="about">
             <h2 id="about-title">ABOUT</h2>
             <div id="about-me">
 
                 <div class="box1">
-                    <img src="/assets/images/profilepic.jpg" alt="pic" id="about-pic">
+                    <img src="./assets/images/profilepic.jpg" alt="pic" id="about-pic">
                 </div>
 
                 <div class="box2">
-                     <h4 id="about-header">A little about me..</h4>
+                    <h4 id="about-header">A little about me..</h4>
                     <p> Hi, welcome to my webite. I am a budding full stak web developer from Chandler Arizona
                         currently enrolled in the University of Arizona Coding Bootcamp. I aim to sharpen my coding
                         skills with
@@ -96,6 +97,7 @@
         </section>
     </div>
 
+    <!-------------------PROJECTS --------------------------->
     <section id="projects">
         <div class="container">
             <h2 id="projects-title">PROJECTS</h2>
@@ -103,7 +105,8 @@
 
                 <div class="project-box1">
                     <div class="card">
-                        <img class="card-img-top" src="./assets/images/mongo-nfl-scraper.png" alt="Card image">
+                        
+                        <img class="card-img-top" src="./assets/images/mongo-nfl-scraper.png" alt="Card image" id="card-images">
                         <div class="overlay">
                             <h5 class="card-title">Mongo DB News Scraper</h5>
                             <p class="card-text">NODE.JS | EXPRESS.JS | MONGO DB</p>
@@ -114,7 +117,7 @@
 
                 <div class="project-box2">
                     <div class="card">
-                        <img class="card-img-top" src="./assets/images/mongo-nfl-scraper.png" alt="Card image">
+                        <img class="card-img-top" src="./assets/images/mongo-nfl-scraper.png" alt="Card image" id="card-images">
                         <div class="overlay">
                             <h5 class="card-title">EAT-DA-BURGER</h5>
                             <p class="card-text">NODE.JS | EXPRESS.JS | MYSQL</p>
@@ -125,7 +128,7 @@
 
                 <div class="project-box3">
                     <div class="card">
-                        <img class="card-img-top" src="./assets/images/friend-finder.png" alt="Card image">
+                        <img class="card-img-top" src="./assets/images/friend-finder.png" alt="Card image" id="card-images">
                         <div class="overlay">
                             <h4 class="card-title">FRIEND FINDER</h4>
                             <p class="card-text">Some example text.</p>
@@ -136,7 +139,7 @@
 
                 <div class="project-box4">
                     <div class="card">
-                        <img class="card-img-top" src="./assets/images/mongo-nfl-scraper.png" alt="Card image">
+                        <img class="card-img-top" src="./assets/images/mongo-nfl-scraper.png" alt="Card image" id="card-images">
                         <div class="overlay">
                             <h4 class="card-title">John Doe</h4>
                             <p class="card-text">Some example text.</p>
@@ -147,9 +150,9 @@
 
                 <div class="project-box5">
                     <div class="card">
-                        <img class="card-img-top" src="./assets/images/mongo-nfl-scraper.png" alt="Card image">
+                        <img class="card-img-top" src="./assets/images/travel-tracker.png" alt="Card image" id="card-images">
                         <div class="overlay">
-                            <h4 class="card-title">John Doe</h4>
+                            <h4 class="card-title">TRAVEL TRACKER</h4>
                             <p class="card-text">Some example text.</p>
                             <a href="#" class="btn btn-primary" id="port-btn">CHECK IT OUT</a>
                         </div>
@@ -158,9 +161,9 @@
 
                 <div class="project-box6">
                     <div class="card">
-                        <img class="card-img-top" src="./assets/images/mongo-nfl-scraper.png" alt="Card image">
+                        <img class="card-img-top" src="./assets/images/burger.png" alt="Card image" id="card-images">
                         <div class="overlay">
-                            <h4 class="card-title">John Doe</h4>
+                            <h4 class="card-title">EAT-DA-BURGER</h4>
                             <p class="card-text">Some example text.</p>
                             <a href="#" class="btn btn-primary" id="port-btn">CHECK IT OUT</a>
                         </div>
@@ -211,7 +214,52 @@
             </div> -->
 
         </div>
+    </section>
 
+    <!------------------- CONTACT ------------------------->
+    <section id="contact">
+        <div class="container">
+            <h2 id="contact-title">CONTACT</h2>
+            <form method="POST" action="contact.php" class="create-form">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Name</label>
+                    <input type="text" class="form-control" id="form-input" placeholder="Your Name" name="sender">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id=form-input
+                        placeholder="name@example.com" name="senderEmail">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Your Message</label>
+                    <textarea class="form-control" rows="3" id="text-area" name="message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!------------------- FOOTER------------------->
+    <section id="footer">
+
+        <div class="arrow-icon">
+            <a href="#">
+            <i class="fas fa-arrow-circle-down fa-3x"></i>
+        </a>
+        </div>
+            
+        <div class="footer-icons">
+            <ul>
+            <li><a href=""><i class="fab fa-linkedin fa-2x"></i></a></li>
+            <li><a href=""><i class="fab fa-github fa-2x"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram fa-2x"></i></a></li>
+            </ul>
+        </div>
+
+        <p class="name-year">NATHAN BENZOR | 2019</p>
 
     </section>
 
