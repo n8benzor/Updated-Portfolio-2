@@ -63,9 +63,62 @@ body {
 
 /* ------------------NAV -----------------------*/
 
+.navbar {
+    background-color: rgba(37, 41, 52);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+/* 
+.navbar-nav {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+} */
+
+.logo {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.logo #name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.logo span {
+    color: goldenrod;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    height: auto;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.nav-links a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: all 0.5s ease;
+}
+
+.nav-links a:hover {
+    color: goldenrod;
+}
 
 
-nav {
+/* nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -152,8 +205,8 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 20%;
-        transform: translateX(0%);
+        width: 25%;
+        transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
     .nav-links li {
@@ -165,7 +218,7 @@ nav {
 }
 
 .nav-active {
-    transform: translateX(100%);
+    transform: translateX(0%);
     transition: transform 0.5s ease-in;
 }
 
@@ -178,7 +231,7 @@ nav {
         opacity: 1;
         transform: translate(0px);
     }
-}
+} */
 
 /* .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
