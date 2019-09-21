@@ -63,22 +63,19 @@ body {
 
 /* ------------------NAV -----------------------*/
 
+
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     max-height: 5vh;
-    min-height: 7vh;
-    background: none;
+    min-height: 8vh;
     background: rgba(37, 41, 52);
-    /* font-family: 'Poppins', sans-serif; */
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
-    /* -webkit-box-shadow: 0 8px 6px -6px #999;
-    -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 8px 6px -6px rgb(24, 24, 24); */
 }
 
 .nav-links {
@@ -100,7 +97,6 @@ nav {
 }
 
 .nav-links a:hover {
-    /* color: #417266; */
     color: goldenrod;
 }
 
@@ -121,7 +117,6 @@ nav {
 }
 
 .logo span {
-    /* color: #417266; */
     color: goldenrod;
 }
 
@@ -146,19 +141,19 @@ nav {
 
 @media screen and (max-width:768px) {
     body {
-        overflow-x: hidden;
+        overflow-x: hidden; 
     }
     .nav-links {
         position: absolute;
         right: 0px;
         height: 30vh;
         top: 8vh;
-        background-color: black;
+        background-color: rgb(37,41,52);
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
-        transform: translateX(100%);
+        width: 20%;
+        transform: translateX(0%);
         transition: transform 0.5s ease-in;
     }
     .nav-links li {
@@ -170,7 +165,8 @@ nav {
 }
 
 .nav-active {
-    transform: translate(0%);
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
 }
 
 @keyframes navLinkFade {
@@ -184,7 +180,7 @@ nav {
     }
 }
 
-.toggle .line1 {
+/* .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
 
@@ -194,7 +190,7 @@ nav {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
-}
+} */
 
 /* -------------------------ABOUT SECTION------------------------------- */
 
@@ -595,10 +591,36 @@ ul {
         /* border: 1px solid rgb(161, 161, 161); */
     }
 
+    #about {
+        height: auto;
+    }
+    
+    #about-me {
+        /* display: block; */
+        font-size: 16px;
+        /* width: 50%; */
+        margin: 2em auto;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "box1" "box3" "box2";
+        /* height: auto; */
+        /* row-gap: 1em; */
+    }
+
+    #about-header {
+        text-align: center;
+        padding: 1em;
+    }
+
+    .box3 {
+        text-align: center;
+    }
+
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-device-width : 320px) {
+@media only screen and (max-width : 320px) {
 
     #about {
         height: auto;
@@ -613,8 +635,8 @@ ul {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: "box1" "box3" "box2";
-        height: auto;
-        row-gap: 1em;
+        /* height: auto; */
+        /* row-gap: 1em; */
     }
 
     #about-header {
